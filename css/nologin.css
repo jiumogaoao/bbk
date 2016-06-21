@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+*,input,button,textarea{
+		padding: 0px;
+  		margin: 0px;
+  		outline: none;
+  		border: 0px;
+ 		box-sizing: border-box;
+  		box-shadow: none;
+  		border-radius: 0px;
+  		background-color: transparent;
+  		background-image: none;
+        -webkit-appearance: none;
+		font-family: "Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+	}
+body{
+		background-color: #f4f4f4;
+		font-family: "Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+		background-color:#fff;
+	}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #8ea7c8; 
+font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #8ea7c8; 
+font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: #8ea7c8; 
+font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: #8ea7c8; 
+font-family:"Microsoft YaHei",\5FAE\8F6F\96C5\9ED1,'SimHei',\9ED1\4F53,'LiHei Pro Medium', 'HanHei SC', 'STHeiti';
+}
+.clear{
+		clear:both;}
+#pop{
+	position:absolute;
+	left:50%;
+	top:200px;
+	transform:translateX(-50%);
+	background-color:#fff;
+	border-radius:20px;
+	z-index:10086;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+	display:none;
+	}
+#pop #popMain{
+	padding:40px;
+	text-align:center;
+	}
+#pop #popClose{
+	width:40px;
+	height:40px;
+	background-color:red;
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+	position:absolute;
+	font-size:30px;
+	top:-20px;
+	right:-20px;
+	border-radius:10px;
+	cursor:pointer;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.3);}
+#head{
+	height:75px;
+	background-color:#fff;
+	width:100%;
+	box-shadow:0px 0px 30px 8px rgba(0,0,0,0.3);
+	position:relative;
+	z-index:10;}
+#head #headCenter{
+	width:980px;
+	height:75px;
+	margin:auto;
+	position:relative;}
+#head #icon{
+	display:block;
+	float:left;
+	margin-top:25px;
+	margin-left:10px;}
+#head #welcome{
+	height:18px;
+	float:left;
+	border-left:1px solid #7d7d87;
+	padding-left:10px;
+	margin-left:10px;
+	margin-top:26px;
+	line-height:18px;
+	font-family:黑体;
+	color:#7d7d87;}
+#head #login{
+	width:53px;
+	height:21px;
+	background-color:#f7f7f7;
+	color:#7d7d87;
+	text-align:center;
+	line-height:20px;
+	border:1px solid #a3a3aa;
+	border-radius:3px;
+	float:right;
+	cursor:pointer;
+	margin-top:22px;
+	}
+#head #tologin{
+	font-size:14px;
+	color:#7d7d87;
+	float:right;
+	margin-right:10px;
+	margin-top:22px;
+	}
+.main{
+	width:100%;
+	}
+.main #mainCenter{
+	width:980px;
+	margin:auto;
+	position:relative;
+	transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  	transition-duration: 2000ms;
+  	opacity: 0;
+	}
+.active .main #mainCenter{
+	opacity: 1;
+}
+/*登录*/
+#login_page{
+	background-image:url(../images/login.jpg);
+	height:565px;
+	background-position:center top;
+	background-repeat:no-repeat;
+	}
+#login_page #regest{
+	position:absolute;
+	    top: 120px;
+    left: 906px;
+	color:#de1212;
+	cursor:pointer;
+	z-index:2;
+	}
+#login_page #name{
+	position: absolute;
+    top: 181px;
+    left: 680px;
+    width: 284px;
+    height: 48px;
+	line-height:48px;
+	text-indent:10px;
+	z-index:2;}
+#login_page #key{
+	position: absolute;
+    top: 255px;
+    left: 680px;
+    width: 284px;
+    height: 48px;
+	line-height:48px;
+	text-indent:10px;
+	z-index:2;
+	}
+#login_page #remember{
+	position: absolute;
+        top: 329px;
+    left: 632px;
+    width: 15px;
+    height: 15px;
+	border:1px solid #c6c6c6;
+	border-radius:3px;
+	cursor:pointer;
+	background-color:#f0f0f0;
+	z-index:2;
+	}
+#login_page #remember.hl{
+	background-color:green;
+	z-index:2;
+	}
+#login_page #forgetKey{
+	position: absolute;
+    top: 328px;
+    left: 902px;
+	color:#7d7d87;
+	cursor:pointer;
+	z-index:2;}
+#login_page #forgetKey:hover{
+	color:red;
+	z-index:2;}
+#login_page #login{
+	position: absolute;
+    top: 372px;
+    left: 632px;
+    width: 332px;
+    height: 49px;
+    background-color: #de1212;
+    color: #fff;
+	cursor:pointer;
+	font-size:18px;
+	line-height:49px;
+	z-index:2;
+	}
+#login_page #login:hover{
+	background-color:green;}
+#login_page #bg{
+	    position: absolute;
+    top: 96px;
+    left: 602px;
+    z-index: 1;}
+/*regest_page*/
+#regest_page{
+	margin-top:150px;
+	transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  	transition-duration: 2000ms;
+  	transform: scale(0);
+  	opacity: 0;
+}
+.active #regest_page{
+	transform: scale(1);
+  	opacity: 1;
+}
+#regest_page .inputFrame{
+	width:333px;
+	height:50px;
+	border:1px solid #c8c8c8;
+	margin:auto;
+	margin-bottom:24px;
+	}
+#regest_page .inputFrame .icon{
+	float:left;}
+#regest_page .inputFrame .input{
+	float: left;
+    width: 285px;
+    height: 48px;
+    text-align: center;
+	line-height:48px;
+	border-left:1px solid #c8c8c8;}
+#regest_page .inputFrame .codeText{
+	float:left;
+	height:48px;
+	line-height:48px;
+	width:70px;
+	color:#999999;
+	background-color:#f0f0f0;
+	text-align:center;}
+#regest_page .inputFrame .codeInput{
+	float: left;
+    width: 160px;
+    height: 48px;
+    text-align: center;
+	line-height:48px;
+	border-left:1px solid #c8c8c8;
+	border-right:1px solid #c8c8c8;
+	}
+#regest_page .inputFrame .codeGet,#regest_page .inputFrame .picCodeGet{
+	float:left;
+	height:48px;
+	line-height:48px;
+	width:101px;
+	color:#999999;
+	background-color:#f0f0f0;
+	text-align:center;
+	cursor:pointer;
+	}
+#regest_page .inputFrame .picCodeGet{
+display: block;
+border:0px;
+}
+#regest_page #regest{
+	height:49px;
+	width:333px;
+	background-color:#38c571;
+	color:#fff;
+	text-align:center;
+	line-height:49px;
+	display:block;
+	margin:auto;
+	font-size:18px;
+	cursor:pointer;
+	}
+#regest_page #regest:hover{
+	background-color:red;}
+/*regestSC_page*/
+#regestSC_page #icon{
+	display:block;
+	margin:auto;
+	margin-top:155px;
+	transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  	transition-duration: 2000ms;
+  	transform: scale(10);
+  	opacity: 0;
+}
+.active #regestSC_page #icon{
+	transform: scale(1);
+  	opacity: 1;
+}
+#regestSC_page #next{
+	margin:auto;
+	height:45px;
+	width:180px;
+	background-color:#80d34a;
+	color:#fff;
+	text-align:center;
+	line-height:45px;
+	font-size:18px;
+	display:block;
+	border-radius:10px;
+	cursor:pointer;
+	margin-top:38px;}
+#regestSC_page #next:hover{
+	background-color:red;}

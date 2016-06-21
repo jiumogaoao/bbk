@@ -1,0 +1,29 @@
+<?php $this->load->view('头部.html');?>
+<link href="/assets/css/nologin.css" rel="stylesheet" rev="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="head">
+	<div id="headCenter">
+        <img src="/assets/images/leftTop.jpg" id="icon"/>
+        <div id="welcome">欢迎登录</div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="main" id="login_page">
+	<div id="mainCenter">
+    	<button id="regest">立即注册</button>
+        <input id="name" placeholder="账号"/>
+        <input id="key" type="password" placeholder="密码"/>
+        <input id="remember" value="1" type="checkbox" class="checkbox"/>
+        <button id="forgetKey">忘记密码？</button>
+        <button id="login">登录</button>
+        <img src="/assets/images/loginbox.jpg" id="bg"/>
+    </div>
+</div>
+<div id="pop">
+	<div id="popClose">X</div>
+    <div id="popMain"></div>
+</div>
+<script src="/assets/js/nologin.js" type="text/javascript"></script>
+<?php $this->load->view('尾部.html');?>
